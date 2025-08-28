@@ -1,0 +1,160 @@
+.slide-in-right {
+    animation: slideInRight 0.4s forwards;
+}
+.slide-in-left {
+    animation: slideInLeft 0.4s forwards;
+}
+@keyframes slideInRight {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+/* Slide transition for main mode switch */
+.slide-left {
+    animation: slideLeft 0.4s forwards;
+}
+.slide-right {
+    animation: slideRight 0.4s forwards;
+}
+@keyframes slideLeft {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+@keyframes slideRight {
+    from { transform: translateX(0); }
+    to { transform: translateX(100%); }
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+#window {
+    width: 300px;
+    height: 600px;
+    background-color: rgb(57, 55, 91);
+    text-align: center;
+    padding: 20px;
+}
+
+#title {
+    color: white;
+    font-size: 30px;
+    margin: 0;
+}
+
+#titlebar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#titlebar button {
+ background: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#minimize {
+    margin-left: auto;
+}
+
+main {
+    background-color: rgb(116, 92, 151);
+    height: 450px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    position: relative;
+    transition: background-color 0.3s, transform 0.5s;
+}
+
+.slide-out-left {
+    animation: slideOutLeft 0.4s forwards;
+}
+.slide-in-right {
+    animation: slideInFromRight 0.4s forwards;
+}
+.slide-out-right {
+    animation: slideOutRight 0.4s forwards;
+}
+.slide-in-left {
+    animation: slideInFromLeft 0.4s forwards;
+}
+@keyframes slideOutRight {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(350px);
+    }
+}
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-350px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+.short-break {
+    background-color: rgb(70, 50, 100);
+}
+@keyframes slideOutLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-350px);
+    }
+}
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(350px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+#work {
+    width: 200px;
+    margin-top: 25%;
+}
+
+#timer {
+    color: white;
+    font-size: 50px;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(116, 92, 151);
+    height: 65px;
+    border-radius: 15px;
+}
+
+footer button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin: 20px 25px;
+}
